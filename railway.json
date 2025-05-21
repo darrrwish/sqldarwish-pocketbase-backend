@@ -1,3 +1,10 @@
 {
-  "start": "bash start.sh"
+  "build": {
+    "env": {
+      "PORT": "8090"
+    }
+  },
+  "deploy": {
+    "startCommand": "./pocketbase serve --http=0.0.0.0:8090"
+  }
 }
